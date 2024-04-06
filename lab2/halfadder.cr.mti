@@ -1,0 +1,29 @@
+C:/modelsim/fulladder.v {1 {vlog -work work -stats=none C:/modelsim/fulladder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fulladder
+
+Top level modules:
+	fulladder
+
+} {} {}} C:/modelsim/halfadder.v {1 {vlog -work work -stats=none C:/modelsim/halfadder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module halfadder
+
+Top level modules:
+	halfadder
+
+} {} {}} C:/modelsim/fulladder_tb.v {1 {vlog -work work -stats=none C:/modelsim/fulladder_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fulladder_tb
+
+Top level modules:
+	fulladder_tb
+
+} {} {}} C:/modelsim/halfadder_tb.v {1 {vlog -work work -stats=none C:/modelsim/halfadder_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module halfadder_tb
+
+Top level modules:
+	halfadder_tb
+
+} {} {}}

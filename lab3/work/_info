@@ -1,0 +1,222 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/modelsim
+vcomparator
+Z0 !s110 1712052440
+!i10b 1
+!s100 foe9CYHoeiGLkHP`_h7bz0
+Inn5Yd51UVQlNZFBTl]_bK0
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 dC:/modelsim/lab3
+w1712051308
+8C:/modelsim/lab3/comparator.v
+FC:/modelsim/lab3/comparator.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1712052440.000000
+!s107 C:/modelsim/lab3/comparator.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/modelsim/lab3/comparator.v|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+vcomparator_tb
+R0
+!i10b 1
+!s100 VZm>Q0D;;gI7gEVY_oFIc1
+IT1cbWZFN<XfFVOE@N2Uh`2
+R1
+R2
+w1712051472
+8C:\modelsim\lab3\comparator_tb.v
+FC:\modelsim\lab3\comparator_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:\modelsim\lab3\comparator_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:\modelsim\lab3\comparator_tb.v|
+!i113 1
+R5
+R6
+vcomparatorN
+R0
+!i10b 1
+!s100 M0S6H7U0<mnX[f^K;Y]c>3
+I5Qz>zYadY6^[C_G9LH9g_0
+R1
+R2
+w1712052112
+8C:/modelsim/lab3/comparatorN.v
+FC:/modelsim/lab3/comparatorN.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/modelsim/lab3/comparatorN.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/modelsim/lab3/comparatorN.v|
+!i113 1
+R5
+R6
+ncomparator@n
+vcomparatorN_tb
+R0
+!i10b 1
+!s100 8J]bAk>LWUBl7gT@?YGnn3
+IjW>Tz69VdYT=cgIW_aM?J1
+R1
+R2
+w1712052414
+8C:/modelsim/lab3/comparatorN_tb.v
+FC:/modelsim/lab3/comparatorN_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/modelsim/lab3/comparatorN_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/modelsim/lab3/comparatorN_tb.v|
+!i113 1
+R5
+R6
+ncomparator@n_tb
+vfulladder
+Z7 !s110 1712052439
+!i10b 1
+!s100 [Cz35@7_][=`kDh[dOjFo3
+I>h]9EV:Hm:YVNMJTRdBQL1
+R1
+R2
+w1711543149
+8C:/modelsim/lab3/fulladder.v
+FC:/modelsim/lab3/fulladder.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z8 !s108 1712052439.000000
+!s107 C:/modelsim/lab3/fulladder.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/modelsim/lab3/fulladder.v|
+!i113 1
+R5
+R6
+vfulladder_tb
+R7
+!i10b 1
+!s100 ORb`OQjWm@1RVZQo^8EZ51
+IkoVn_@3`oOR]hJc_mzdXH3
+R1
+R2
+w1711543016
+8C:/modelsim/lab3/fulladder_tb.v
+FC:/modelsim/lab3/fulladder_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/modelsim/lab3/fulladder_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/modelsim/lab3/fulladder_tb.v|
+!i113 1
+R5
+R6
+vmux2
+R7
+!i10b 1
+!s100 c>ikHYGPmV_K1<@_kgV2W2
+I^OmiaJ<`eHWmhn>Q^Y4LX0
+R1
+R2
+w1712030089
+8C:/modelsim/lab3/mux2.v
+FC:/modelsim/lab3/mux2.v
+L0 1
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/modelsim/lab3/mux2.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/modelsim/lab3/mux2.v|
+!i113 1
+R5
+R6
+vmux2_tb
+R7
+!i10b 1
+!s100 :iBeT[8hz[X[8VbG<@gkm2
+IJJ?I3dY_=[QNPPC8g]9;h3
+R1
+R2
+w1711544012
+8C:/modelsim/lab3/mux2_tb.v
+FC:/modelsim/lab3/mux2_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R8
+!s107 C:/modelsim/lab3/mux2_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/modelsim/lab3/mux2_tb.v|
+!i113 1
+R5
+R6
+vmux2n
+R0
+!i10b 1
+!s100 =?Z1=I^QklX8nElhCmI:Y2
+IMgInOY<:9m76Q229P6YZR3
+R1
+R2
+w1711544246
+8C:/modelsim/lab3/mux2n.v
+FC:/modelsim/lab3/mux2n.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/modelsim/lab3/mux2n.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/modelsim/lab3/mux2n.v|
+!i113 1
+R5
+R6
+vmux2n_tb
+R0
+!i10b 1
+!s100 EA=WYKajQ;eMzOL`=5=^22
+IHIc6NKhNAhIB6hNY9z=>:2
+R1
+R2
+w1711544294
+8C:/modelsim/lab3/mux2n_tb.v
+FC:/modelsim/lab3/mux2n_tb.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/modelsim/lab3/mux2n_tb.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/modelsim/lab3/mux2n_tb.v|
+!i113 1
+R5
+R6

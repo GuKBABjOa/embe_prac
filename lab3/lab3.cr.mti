@@ -1,0 +1,71 @@
+C:/modelsim/lab3/comparatorN.v {1 {vlog -work work -stats=none C:/modelsim/lab3/comparatorN.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module comparatorN
+
+Top level modules:
+	comparatorN
+
+} {} {}} C:/modelsim/lab3/mux2n.v {1 {vlog -work work -stats=none C:/modelsim/lab3/mux2n.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux2n
+
+Top level modules:
+	mux2n
+
+} {} {}} C:/modelsim/lab3/comparatorN_tb.v {1 {vlog -work work -stats=none C:/modelsim/lab3/comparatorN_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module comparatorN_tb
+
+Top level modules:
+	comparatorN_tb
+
+} {} {}} C:/modelsim/lab3/fulladder.v {1 {vlog -work work -stats=none C:/modelsim/lab3/fulladder.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fulladder
+
+Top level modules:
+	fulladder
+
+} {} {}} C:/modelsim/lab3/mux2n_tb.v {1 {vlog -work work -stats=none C:/modelsim/lab3/mux2n_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux2n_tb
+
+Top level modules:
+	mux2n_tb
+
+} {} {}} C:/modelsim/lab3/comparator.v {1 {vlog -work work -stats=none C:/modelsim/lab3/comparator.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module comparator
+
+Top level modules:
+	comparator
+
+} {} {}} C:/modelsim/lab3/fulladder_tb.v {1 {vlog -work work -stats=none C:/modelsim/lab3/fulladder_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module fulladder_tb
+
+Top level modules:
+	fulladder_tb
+
+} {} {}} C:/modelsim/lab3/mux2.v {1 {vlog -work work -stats=none C:/modelsim/lab3/mux2.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux2
+
+Top level modules:
+	mux2
+
+} {} {}} C:/modelsim/lab3/comparator_tb.v {1 {vlog -work work -stats=none {C:\modelsim\lab3\comparator_tb.v}
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module comparator_tb
+
+Top level modules:
+	comparator_tb
+
+} {} {}} C:/modelsim/lab3/mux2_tb.v {1 {vlog -work work -stats=none C:/modelsim/lab3/mux2_tb.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module mux2_tb
+
+Top level modules:
+	mux2_tb
+
+} {} {}}

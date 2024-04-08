@@ -1,0 +1,6 @@
+set tool_name "ModelSim-Altera (Verilog)"
+set corner_file_list {
+    {{"Slow -7 1.2V 85 Model"} {d_latch_7_1200mv_85c_slow.vo d_latch_7_1200mv_85c_v_slow.sdo}}
+    {{"Slow -7 1.2V 0 Model"} {d_latch_7_1200mv_0c_slow.vo d_latch_7_1200mv_0c_v_slow.sdo}}
+    {{"Fast -M 1.2V 0 Model"} {d_latch_min_1200mv_0c_fast.vo d_latch_min_1200mv_0c_v_fast.sdo}}
+}

@@ -1,0 +1,13 @@
+module majority (data, y);
+	input [3:0] data;
+	output y;
+	reg y;
+	
+	always @ (*) begin
+		case (data)
+			7, 11, 13, 14: y = 1;
+			15: y = 1;
+			default: y = 0;
+		endcase
+	end
+endmodule

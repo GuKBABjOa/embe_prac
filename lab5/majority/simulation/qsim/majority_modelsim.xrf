@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/intelFPGA_lite/majority/majority.v
+source_file = 1, C:/intelFPGA_lite/majority/Waveform.vwf
+source_file = 1, C:/intelFPGA_lite/majority/db/majority.cbx.xml
+design_name = majority
+instance = comp, \y~output , y~output, majority, 1
+instance = comp, \data[2]~input , data[2]~input, majority, 1
+instance = comp, \data[3]~input , data[3]~input, majority, 1
+instance = comp, \data[0]~input , data[0]~input, majority, 1
+instance = comp, \data[1]~input , data[1]~input, majority, 1
+instance = comp, \LessThan0~0 , LessThan0~0, majority, 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

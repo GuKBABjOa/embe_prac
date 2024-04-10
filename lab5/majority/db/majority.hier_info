@@ -1,0 +1,15 @@
+|majority
+data[0] => Add0.IN2
+data[0] => count.DATAA
+data[1] => count.OUTPUTSELECT
+data[1] => count.OUTPUTSELECT
+data[2] => count.OUTPUTSELECT
+data[2] => count.OUTPUTSELECT
+data[2] => count.OUTPUTSELECT
+data[3] => count[3].OUTPUTSELECT
+data[3] => count[2].OUTPUTSELECT
+data[3] => count[1].OUTPUTSELECT
+data[3] => count[0].OUTPUTSELECT
+y <= LessThan0.DB_MAX_OUTPUT_PORT_TYPE
+
+

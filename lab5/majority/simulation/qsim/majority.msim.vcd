@@ -1,0 +1,198 @@
+$comment
+	File created using the following command:
+		vcd file majority.msim.vcd -direction
+$end
+$date
+	Wed Apr 10 21:41:29 2024
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module majority_vlg_vec_tst $end
+$var reg 4 ! data [3:0] $end
+$var wire 1 " y $end
+
+$scope module i1 $end
+$var wire 1 # gnd $end
+$var wire 1 $ vcc $end
+$var wire 1 % unknown $end
+$var tri1 1 & devclrn $end
+$var tri1 1 ' devpor $end
+$var tri1 1 ( devoe $end
+$var wire 1 ) y~output_o $end
+$var wire 1 * data[2]~input_o $end
+$var wire 1 + data[3]~input_o $end
+$var wire 1 , data[0]~input_o $end
+$var wire 1 - data[1]~input_o $end
+$var wire 1 . LessThan0~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+x"
+0#
+1$
+x%
+1&
+1'
+1(
+x)
+0*
+0+
+0,
+0-
+x.
+$end
+#3291
+0.
+#6766
+0)
+0"
+#60000
+b1 !
+#60680
+1,
+#120000
+b11 !
+b10 !
+#120690
+1-
+#120786
+0,
+#180000
+b11 !
+#180680
+1,
+#240000
+b111 !
+b101 !
+b100 !
+#240690
+1*
+#240786
+0,
+#240796
+0-
+#300000
+b101 !
+#300680
+1,
+#360000
+b111 !
+b110 !
+#360690
+1-
+#360786
+0,
+#363595
+1.
+#364077
+0.
+#420000
+b111 !
+#420680
+1,
+#423723
+1.
+#427245
+1)
+1"
+#480000
+b1111 !
+b1011 !
+b1001 !
+b1000 !
+#480690
+1+
+#480786
+0,
+#480796
+0*
+0-
+#483936
+0.
+#487411
+0)
+0"
+#540000
+b1001 !
+#540680
+1,
+#600000
+b1011 !
+b1010 !
+#600690
+1-
+#600786
+0,
+#603595
+1.
+#604077
+0.
+#660000
+b1011 !
+#660680
+1,
+#663723
+1.
+#667245
+1)
+1"
+#720000
+b1111 !
+b1101 !
+b1100 !
+#720690
+1*
+#720786
+0,
+#720796
+0-
+#723936
+0.
+#727411
+0)
+0"
+#780000
+b1101 !
+#780680
+1,
+#783723
+1.
+#787245
+1)
+1"
+#840000
+b1111 !
+b1110 !
+#840690
+1-
+#840786
+0,
+#900000
+b1111 !
+#900680
+1,
+#960000
+b111 !
+b11 !
+b1 !
+b0 !
+#960786
+0,
+#960796
+0+
+0*
+0-
+#963936
+0.
+#967411
+0)
+0"
+#1000000

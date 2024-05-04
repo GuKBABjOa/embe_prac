@@ -1,0 +1,11 @@
+|detector
+clk => state~1.DATAIN
+reset => state~3.DATAIN
+in => ns.B.DATAB
+in => ns.C.DATAB
+in => ns.D.DATAB
+in => Selector0.IN1
+in => state.A.DATAIN
+out <= out.DB_MAX_OUTPUT_PORT_TYPE
+
+

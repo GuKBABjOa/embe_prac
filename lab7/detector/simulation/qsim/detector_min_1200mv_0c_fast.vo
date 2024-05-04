@@ -1,0 +1,354 @@
+// Copyright (C) 2018  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition"
+
+// DATE "05/02/2024 10:36:38"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module detector (
+	clk,
+	reset,
+	in,
+	out);
+input 	clk;
+input 	reset;
+input 	in;
+output 	out;
+
+// Design Ports Information
+// out	=>  Location: PIN_A6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// in	=>  Location: PIN_B6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_J1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// reset	=>  Location: PIN_Y2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("detector_min_1200mv_0c_v_fast.sdo");
+// synopsys translate_on
+
+wire \out~output_o ;
+wire \clk~input_o ;
+wire \clk~inputclkctrl_outclk ;
+wire \in~input_o ;
+wire \reset~input_o ;
+wire \reset~inputclkctrl_outclk ;
+wire \state.A~q ;
+wire \ns.B~0_combout ;
+wire \state.B~q ;
+wire \ns.C~0_combout ;
+wire \state.C~q ;
+wire \ns.D~0_combout ;
+wire \state.D~q ;
+wire \Selector0~0_combout ;
+wire \state.E~q ;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X27_Y73_N16
+cycloneive_io_obuf \out~output (
+	.i(\state.E~q ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\out~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \out~output .bus_hold = "false";
+defparam \out~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y36_N8
+cycloneive_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G2
+cycloneive_clkctrl \clk~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\clk~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\clk~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \clk~inputclkctrl .clock_type = "global clock";
+defparam \clk~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: IOIBUF_X27_Y73_N22
+cycloneive_io_ibuf \in~input (
+	.i(in),
+	.ibar(gnd),
+	.o(\in~input_o ));
+// synopsys translate_off
+defparam \in~input .bus_hold = "false";
+defparam \in~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y36_N15
+cycloneive_io_ibuf \reset~input (
+	.i(reset),
+	.ibar(gnd),
+	.o(\reset~input_o ));
+// synopsys translate_off
+defparam \reset~input .bus_hold = "false";
+defparam \reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G4
+cycloneive_clkctrl \reset~inputclkctrl (
+	.ena(vcc),
+	.inclk({vcc,vcc,vcc,\reset~input_o }),
+	.clkselect(2'b00),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.outclk(\reset~inputclkctrl_outclk ));
+// synopsys translate_off
+defparam \reset~inputclkctrl .clock_type = "global clock";
+defparam \reset~inputclkctrl .ena_register_mode = "none";
+// synopsys translate_on
+
+// Location: FF_X27_Y72_N29
+dffeas \state.A (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(gnd),
+	.asdata(\in~input_o ),
+	.clrn(\reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(vcc),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\state.A~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state.A .is_wysiwyg = "true";
+defparam \state.A .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X27_Y72_N18
+cycloneive_lcell_comb \ns.B~0 (
+// Equation(s):
+// \ns.B~0_combout  = (\in~input_o  & !\state.A~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\in~input_o ),
+	.datad(\state.A~q ),
+	.cin(gnd),
+	.combout(\ns.B~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ns.B~0 .lut_mask = 16'h00F0;
+defparam \ns.B~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X27_Y72_N19
+dffeas \state.B (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\ns.B~0_combout ),
+	.asdata(vcc),
+	.clrn(\reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\state.B~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state.B .is_wysiwyg = "true";
+defparam \state.B .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X27_Y72_N12
+cycloneive_lcell_comb \ns.C~0 (
+// Equation(s):
+// \ns.C~0_combout  = (\in~input_o  & \state.B~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\in~input_o ),
+	.datad(\state.B~q ),
+	.cin(gnd),
+	.combout(\ns.C~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ns.C~0 .lut_mask = 16'hF000;
+defparam \ns.C~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X27_Y72_N13
+dffeas \state.C (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\ns.C~0_combout ),
+	.asdata(vcc),
+	.clrn(\reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\state.C~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state.C .is_wysiwyg = "true";
+defparam \state.C .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X27_Y72_N10
+cycloneive_lcell_comb \ns.D~0 (
+// Equation(s):
+// \ns.D~0_combout  = (\in~input_o  & \state.C~q )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(\in~input_o ),
+	.datad(\state.C~q ),
+	.cin(gnd),
+	.combout(\ns.D~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \ns.D~0 .lut_mask = 16'hF000;
+defparam \ns.D~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X27_Y72_N11
+dffeas \state.D (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\ns.D~0_combout ),
+	.asdata(vcc),
+	.clrn(\reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\state.D~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state.D .is_wysiwyg = "true";
+defparam \state.D .power_up = "low";
+// synopsys translate_on
+
+// Location: LCCOMB_X27_Y72_N0
+cycloneive_lcell_comb \Selector0~0 (
+// Equation(s):
+// \Selector0~0_combout  = (\in~input_o  & ((\state.E~q ) # (\state.D~q )))
+
+	.dataa(\in~input_o ),
+	.datab(gnd),
+	.datac(\state.E~q ),
+	.datad(\state.D~q ),
+	.cin(gnd),
+	.combout(\Selector0~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \Selector0~0 .lut_mask = 16'hAAA0;
+defparam \Selector0~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: FF_X27_Y72_N1
+dffeas \state.E (
+	.clk(\clk~inputclkctrl_outclk ),
+	.d(\Selector0~0_combout ),
+	.asdata(vcc),
+	.clrn(\reset~inputclkctrl_outclk ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\state.E~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \state.E .is_wysiwyg = "true";
+defparam \state.E .power_up = "low";
+// synopsys translate_on
+
+assign out = \out~output_o ;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_F4,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_E2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_P3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_N7,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_P28,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_FLASH_nCE_nCSO~~padout ;
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_FLASH_nCE_nCSO~~ibuf_o ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+
+
+endmodule

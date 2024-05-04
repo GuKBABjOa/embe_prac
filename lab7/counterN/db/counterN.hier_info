@@ -1,0 +1,21 @@
+|counterN
+clk => qout[0]~reg0.CLK
+clk => qout[1]~reg0.CLK
+clk => qout[2]~reg0.CLK
+clk => qout[3]~reg0.CLK
+reset => qout.OUTPUTSELECT
+reset => qout.OUTPUTSELECT
+reset => qout.OUTPUTSELECT
+reset => qout.OUTPUTSELECT
+en => qout.OUTPUTSELECT
+en => qout.OUTPUTSELECT
+en => qout.OUTPUTSELECT
+en => qout.OUTPUTSELECT
+en => tc.IN1
+qout[0] << qout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[1] << qout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[2] << qout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+qout[3] << qout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+tc << tc.DB_MAX_OUTPUT_PORT_TYPE
+
+

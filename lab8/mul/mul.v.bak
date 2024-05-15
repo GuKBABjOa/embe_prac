@@ -1,0 +1,47 @@
+module mul(clk, reset, start, word1, word2, product, ready);
+	input clk, reset, start;
+	input [3:0] word1, word2;
+	output [7:0] product;
+	output ready;
+	wire m0; // status signal
+	wire load, shift, add; // control signals
+	
+	// datapath ------------------------
+	reg [7:0] product;
+	reg carry;
+	reg [3:0] multiplicand;
+	wire[4:0] sum; // 5-bit
+	assign m0 = product[0]; // status signal
+	assign sum = product[7:4] + multiplicand;
+	always @ (posedge clk) begin
+		if (load) begin
+			multiplicand <= word1;
+			product <= {4'b0, word2}; // lower 4-bit = multiplier
+		end
+		else if (add) {carry, product[7:4]} <= sum;
+		else if (shift) {carry, product} <= {1'b0, carry, product[7:1]};
+	end
+	// control unit ---------------------------------------
+	localparam S0=0, S1=8, S2=9, S3=10, S4=11, S5=12, S6=13, S7=14, S8=15;
+	reg [3:0] state;
+	always @ (posedge clk, negedge reset) // state transitions
+		if (~reset) state <= S0;
+		else
+		case (state)
+			S0: if (start) state <= S1;
+			S1: if (m0) state <= S2; else state <= S3;
+			S2: state <= S3;
+			S3: if (m0) state <= S4; else state <= S5;
+			S4: state <= S5;
+			S5: if (m0) state <= S6; else state <= S7;
+			S6: state <= S7;
+			S7: if (m0) state <= S8; else state <= S0;
+			S8: state <= S0;
+		endcase
+	// control signals
+	assign load = (state==S0) && start;
+	assign shift = (state==S1||state==S3||state==S5||state==S7) && ~m0 ||
+	(state==S2||state==S4||state==S6||state==S8);
+	assign add = (state==S1||state==S3||state==S5||state==S7) && m0;
+	assign ready = (state==S0) && reset;
+endmodule

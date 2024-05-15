@@ -1,0 +1,8 @@
+
+State Machine - |mul|state
+Name state.S7 state.S5 state.S3 state.S1 state.S0 
+state.S0 0 0 0 0 0 
+state.S1 0 0 0 1 1 
+state.S3 0 0 1 0 1 
+state.S5 0 1 0 0 1 
+state.S7 1 0 0 0 1 

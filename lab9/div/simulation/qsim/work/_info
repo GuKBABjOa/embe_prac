@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/em_hw/lab9/div/simulation/qsim
+vdiv
+Z1 !s110 1716393762
+!i10b 1
+!s100 z715O5iNHM7cQL?2H]o_]1
+Igb2MzTO2J3dkD601`@KJm1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1716393759
+Z4 8div.vo
+Z5 Fdiv.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1716393762.000000
+Z8 !s107 div.vo|
+Z9 !s90 -work|work|div.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vdiv_vlg_vec_tst
+R1
+!i10b 1
+!s100 X_n[mZ8;mnQRafNI7>;Y31
+I[TKJFg`1N4m0?=z2I?gb[0
+R2
+R0
+w1716393757
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+R1
+!i10b 1
+!s100 [2HK65kD1m9a?8K:5LUh43
+IaDL0@>5b1@@W2LfA7dOkb1
+R2
+R0
+R3
+R4
+R5
+L0 1120
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

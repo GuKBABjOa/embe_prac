@@ -1,0 +1,47 @@
+|div
+clk => count[0].CLK
+clk => count[1].CLK
+clk => state.CLK
+clk => divisor[0].CLK
+clk => divisor[1].CLK
+clk => divisor[2].CLK
+clk => divisor[3].CLK
+clk => dividend[0].CLK
+clk => dividend[1].CLK
+clk => dividend[2].CLK
+clk => dividend[3].CLK
+clk => dividend[4].CLK
+clk => dividend[5].CLK
+clk => dividend[6].CLK
+clk => dividend[7].CLK
+reset => ready.IN1
+reset => count[0].ACLR
+reset => count[1].ACLR
+reset => state.ACLR
+start => state.OUTPUTSELECT
+start => count.OUTPUTSELECT
+start => count.OUTPUTSELECT
+start => load.IN1
+word1[0] => dividend.DATAB
+word1[1] => dividend.DATAB
+word1[2] => dividend.DATAB
+word1[3] => dividend.DATAB
+word1[4] => dividend.DATAB
+word1[5] => dividend.DATAB
+word1[6] => dividend.DATAB
+word1[7] => dividend.DATAB
+word2[0] => divisor[0].DATAIN
+word2[1] => divisor[1].DATAIN
+word2[2] => divisor[2].DATAIN
+word2[3] => divisor[3].DATAIN
+quotient[0] <= dividend[0].DB_MAX_OUTPUT_PORT_TYPE
+quotient[1] <= dividend[1].DB_MAX_OUTPUT_PORT_TYPE
+quotient[2] <= dividend[2].DB_MAX_OUTPUT_PORT_TYPE
+quotient[3] <= dividend[3].DB_MAX_OUTPUT_PORT_TYPE
+remainder[0] <= dividend[4].DB_MAX_OUTPUT_PORT_TYPE
+remainder[1] <= dividend[5].DB_MAX_OUTPUT_PORT_TYPE
+remainder[2] <= dividend[6].DB_MAX_OUTPUT_PORT_TYPE
+remainder[3] <= dividend[7].DB_MAX_OUTPUT_PORT_TYPE
+ready <= ready.DB_MAX_OUTPUT_PORT_TYPE
+
+

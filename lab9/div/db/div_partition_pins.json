@@ -1,0 +1,105 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "quotient[0]",
+					"strict" : false
+				},
+				{
+					"name" : "quotient[1]",
+					"strict" : false
+				},
+				{
+					"name" : "quotient[2]",
+					"strict" : false
+				},
+				{
+					"name" : "quotient[3]",
+					"strict" : false
+				},
+				{
+					"name" : "remainder[0]",
+					"strict" : false
+				},
+				{
+					"name" : "remainder[1]",
+					"strict" : false
+				},
+				{
+					"name" : "remainder[2]",
+					"strict" : false
+				},
+				{
+					"name" : "remainder[3]",
+					"strict" : false
+				},
+				{
+					"name" : "ready",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "word1[0]",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "word1[1]",
+					"strict" : false
+				},
+				{
+					"name" : "word1[2]",
+					"strict" : false
+				},
+				{
+					"name" : "word1[3]",
+					"strict" : false
+				},
+				{
+					"name" : "word1[4]",
+					"strict" : false
+				},
+				{
+					"name" : "word1[5]",
+					"strict" : false
+				},
+				{
+					"name" : "word1[6]",
+					"strict" : false
+				},
+				{
+					"name" : "word1[7]",
+					"strict" : false
+				},
+				{
+					"name" : "word2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "word2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "word2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "word2[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

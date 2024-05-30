@@ -1,0 +1,733 @@
+$comment
+	File created using the following command:
+		vcd file div.msim.vcd -direction
+$end
+$date
+	Thu May 23 01:02:44 2024
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module div_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " reset $end
+$var reg 1 # start $end
+$var reg 8 $ word1 [7:0] $end
+$var reg 4 % word2 [3:0] $end
+$var wire 1 & quotient [3] $end
+$var wire 1 ' quotient [2] $end
+$var wire 1 ( quotient [1] $end
+$var wire 1 ) quotient [0] $end
+$var wire 1 * ready $end
+$var wire 1 + remainder [3] $end
+$var wire 1 , remainder [2] $end
+$var wire 1 - remainder [1] $end
+$var wire 1 . remainder [0] $end
+
+$scope module i1 $end
+$var wire 1 / gnd $end
+$var wire 1 0 vcc $end
+$var wire 1 1 unknown $end
+$var tri1 1 2 devclrn $end
+$var tri1 1 3 devpor $end
+$var tri1 1 4 devoe $end
+$var wire 1 5 quotient[0]~output_o $end
+$var wire 1 6 quotient[1]~output_o $end
+$var wire 1 7 quotient[2]~output_o $end
+$var wire 1 8 quotient[3]~output_o $end
+$var wire 1 9 remainder[0]~output_o $end
+$var wire 1 : remainder[1]~output_o $end
+$var wire 1 ; remainder[2]~output_o $end
+$var wire 1 < remainder[3]~output_o $end
+$var wire 1 = ready~output_o $end
+$var wire 1 > clk~input_o $end
+$var wire 1 ? start~input_o $end
+$var wire 1 @ count[1]~1_combout $end
+$var wire 1 A reset~input_o $end
+$var wire 1 B count[0]~0_combout $end
+$var wire 1 C state~0_combout $end
+$var wire 1 D state~feeder_combout $end
+$var wire 1 E state~q $end
+$var wire 1 F word1[0]~input_o $end
+$var wire 1 G dividend~4_combout $end
+$var wire 1 H word2[3]~input_o $end
+$var wire 1 I load~combout $end
+$var wire 1 J word1[3]~input_o $end
+$var wire 1 K word1[1]~input_o $end
+$var wire 1 L dividend~6_combout $end
+$var wire 1 M dividend~7_combout $end
+$var wire 1 N word1[2]~input_o $end
+$var wire 1 O dividend~8_combout $end
+$var wire 1 P dividend~9_combout $end
+$var wire 1 Q word2[0]~input_o $end
+$var wire 1 R diff[0]~0_combout $end
+$var wire 1 S shift~combout $end
+$var wire 1 T dividend[4]~0_combout $end
+$var wire 1 U word1[4]~input_o $end
+$var wire 1 V word2[1]~input_o $end
+$var wire 1 W diff[0]~1 $end
+$var wire 1 X diff[1]~2_combout $end
+$var wire 1 Y dividend[5]~1_combout $end
+$var wire 1 Z word1[5]~input_o $end
+$var wire 1 [ word2[2]~input_o $end
+$var wire 1 \ diff[1]~3 $end
+$var wire 1 ] diff[2]~4_combout $end
+$var wire 1 ^ dividend[6]~2_combout $end
+$var wire 1 _ dividend[6]~feeder_combout $end
+$var wire 1 ` word1[6]~input_o $end
+$var wire 1 a diff[2]~5 $end
+$var wire 1 b diff[3]~6_combout $end
+$var wire 1 c dividend[7]~3_combout $end
+$var wire 1 d word1[7]~input_o $end
+$var wire 1 e diff[3]~7 $end
+$var wire 1 f diff[4]~8_combout $end
+$var wire 1 g dividend~5_combout $end
+$var wire 1 h ready~0_combout $end
+$var wire 1 i dividend [7] $end
+$var wire 1 j dividend [6] $end
+$var wire 1 k dividend [5] $end
+$var wire 1 l dividend [4] $end
+$var wire 1 m dividend [3] $end
+$var wire 1 n dividend [2] $end
+$var wire 1 o dividend [1] $end
+$var wire 1 p dividend [0] $end
+$var wire 1 q divisor [3] $end
+$var wire 1 r divisor [2] $end
+$var wire 1 s divisor [1] $end
+$var wire 1 t divisor [0] $end
+$var wire 1 u count [1] $end
+$var wire 1 v count [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+b0 $
+b0 %
+x)
+x(
+x'
+x&
+x*
+x.
+x-
+x,
+x+
+0/
+10
+x1
+12
+13
+14
+x5
+x6
+x7
+x8
+x9
+x:
+x;
+x<
+x=
+0>
+0?
+x@
+0A
+xB
+xC
+xD
+0E
+0F
+xG
+0H
+xI
+0J
+0K
+xL
+xM
+0N
+xO
+xP
+0Q
+xR
+xS
+xT
+0U
+0V
+xW
+xX
+xY
+0Z
+0[
+x\
+x]
+x^
+x_
+0`
+xa
+xb
+xc
+0d
+xe
+xf
+xg
+xh
+0p
+0o
+0n
+0m
+0l
+0k
+0j
+0i
+0t
+0s
+0r
+0q
+0v
+0u
+$end
+#547
+0S
+#873
+1W
+#939
+0\
+#1005
+1a
+#1014
+0R
+#1071
+0e
+#1385
+0X
+#1451
+0]
+#1517
+0b
+#1583
+0f
+#1819
+0^
+#1848
+0T
+#2225
+0Y
+#2353
+0_
+#2390
+0c
+#4036
+0h
+#4518
+0L
+#4581
+0@
+0B
+#4644
+0O
+0P
+#4830
+0M
+#4834
+0I
+#4854
+0G
+#4963
+0C
+#4978
+08
+0&
+#5226
+06
+0(
+#5555
+0g
+#5815
+0D
+#5997
+0;
+0,
+#7206
+07
+0'
+#7223
+0:
+0-
+#7384
+0<
+0+
+#7419
+05
+0)
+#7729
+09
+0.
+#9989
+0=
+0*
+#40000
+1!
+#40650
+1>
+#60000
+1"
+1#
+b10000000 $
+b10000100 $
+b10000110 $
+b10000111 $
+b1000 %
+b1100 %
+b1101 %
+#60640
+1A
+#60650
+1?
+#60660
+1d
+#60690
+1K
+1F
+#60700
+1N
+1H
+1[
+1Q
+#64458
+1h
+#64920
+1L
+#64943
+1@
+1B
+#65155
+1M
+#65159
+1I
+#65175
+1G
+#65293
+1C
+#65874
+1g
+#66158
+1D
+#66225
+1O
+#70517
+1=
+1*
+#80000
+0!
+#80756
+0>
+#120000
+1!
+#120650
+1>
+#122363
+1u
+1v
+#122627
+1o
+1n
+1i
+#122645
+1q
+1t
+1r
+#122687
+1E
+1p
+#123217
+1f
+#123299
+0W
+#123332
+1b
+#123337
+1R
+#123365
+1\
+#123426
+0h
+#123430
+1e
+#123475
+0a
+#123507
+0I
+#123509
+0G
+#123685
+1P
+#123736
+1S
+#123835
+1X
+#123840
+0B
+#123942
+0f
+#123987
+0b
+#124210
+0g
+#124492
+0S
+#124494
+1g
+#125058
+1Y
+#125059
+1T
+#127808
+16
+1(
+#129379
+0=
+0*
+#129826
+17
+1'
+#130036
+1<
+1+
+#130058
+15
+1)
+#140000
+0#
+b111 $
+b11 $
+b1 $
+b0 $
+b101 %
+b1 %
+b0 %
+#140756
+0?
+#140766
+0d
+#140796
+0K
+0F
+#140806
+0N
+0H
+0[
+0Q
+#160000
+0!
+#160756
+0>
+#200000
+1!
+#200650
+1>
+#202363
+0v
+#202627
+1m
+1l
+1k
+0i
+#202772
+1B
+#203140
+0@
+#203271
+1f
+#203499
+0\
+#203560
+0X
+#203565
+1a
+#203598
+0R
+#203682
+1W
+#203790
+1S
+#203792
+1^
+#203810
+0g
+#204101
+1b
+#204218
+1X
+#204341
+1_
+#207623
+18
+1&
+#209847
+1:
+1-
+#210011
+0<
+0+
+#210375
+19
+1.
+#240000
+0!
+#240756
+0>
+#280000
+1!
+#280650
+1>
+#282363
+0u
+1v
+#282627
+1j
+#282687
+0p
+#282792
+0B
+#283322
+1c
+#283492
+0L
+#283545
+0e
+#283607
+0b
+#284057
+0f
+#284606
+0^
+#284607
+0S
+#284609
+1g
+#285140
+0_
+#285154
+0c
+#285158
+0T
+#288566
+1;
+1,
+#290106
+05
+0)
+#320000
+0!
+#320756
+0>
+#360000
+1!
+#360650
+1>
+#362363
+0v
+#362627
+0o
+0l
+0j
+#362687
+1p
+#363142
+0C
+#363443
+1L
+#363449
+0O
+#363626
+0X
+#363639
+1b
+#363725
+1e
+#363994
+0D
+#364261
+1f
+#364466
+0Y
+#364504
+1c
+#364780
+1S
+#364782
+1^
+#364800
+0g
+#365322
+0c
+#365331
+1_
+#365341
+1T
+#367853
+06
+0(
+#368624
+0;
+0,
+#370058
+15
+1)
+#370356
+09
+0.
+#400000
+0!
+#400756
+0>
+#440000
+1!
+#440650
+1>
+#442627
+1o
+0n
+1l
+0k
+1j
+#442687
+0E
+0p
+#443117
+0P
+#443234
+0S
+#443322
+1c
+1Y
+#443357
+1O
+#443492
+0L
+#443522
+1h
+#443535
+0^
+#443543
+1X
+#443545
+0e
+#443571
+0M
+#443607
+0b
+#443751
+0a
+#443783
+1]
+#443784
+0Y
+#443785
+0T
+#443817
+1e
+#444069
+0_
+#444144
+1^
+#444287
+1b
+#444357
+1Y
+#444480
+0c
+#444693
+1_
+#445152
+1c
+#447808
+16
+1(
+#448566
+1;
+1,
+#449581
+1=
+1*
+#449833
+07
+0'
+#449850
+0:
+0-
+#450106
+05
+0)
+#450375
+19
+1.
+#480000
+0!
+#480756
+0>
+#520000
+1!
+#520650
+1>
+#560000
+0!
+#560756
+0>
+#600000
+1!
+#600650
+1>
+#640000
+0!
+#640756
+0>
+#680000
+1!
+#680650
+1>
+#720000
+0!
+#720756
+0>
+#760000
+1!
+#760650
+1>
+#800000
+0!
+#800756
+0>
+#840000
+1!
+#840650
+1>
+#880000
+0!
+#880756
+0>
+#920000
+1!
+#920650
+1>
+#960000
+0!
+#960756
+0>
+#980000
+0"
+#980746
+0A
+#984782
+0h
+#990735
+0=
+0*
+#1000000

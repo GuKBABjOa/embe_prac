@@ -1,0 +1,36 @@
+|lcd_controller
+clk => count[0].CLK
+clk => count[1].CLK
+clk => count[2].CLK
+clk => count[3].CLK
+clk => state~6.DATAIN
+reset => state~8.DATAIN
+reset => count[0].ENA
+reset => count[3].ENA
+reset => count[2].ENA
+reset => count[1].ENA
+start => always0.IN0
+CS => always0.IN1
+RS => LCD_RS.DATAIN
+data[0] => LCD_data[0].DATAIN
+data[1] => LCD_data[1].DATAIN
+data[2] => LCD_data[2].DATAIN
+data[3] => LCD_data[3].DATAIN
+data[4] => LCD_data[4].DATAIN
+data[5] => LCD_data[5].DATAIN
+data[6] => LCD_data[6].DATAIN
+data[7] => LCD_data[7].DATAIN
+done <= done.DB_MAX_OUTPUT_PORT_TYPE
+LCD_RS <= RS.DB_MAX_OUTPUT_PORT_TYPE
+LCD_RW <= <GND>
+LCD_E <= LCD_E.DB_MAX_OUTPUT_PORT_TYPE
+LCD_data[0] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+LCD_data[1] <= data[1].DB_MAX_OUTPUT_PORT_TYPE
+LCD_data[2] <= data[2].DB_MAX_OUTPUT_PORT_TYPE
+LCD_data[3] <= data[3].DB_MAX_OUTPUT_PORT_TYPE
+LCD_data[4] <= data[4].DB_MAX_OUTPUT_PORT_TYPE
+LCD_data[5] <= data[5].DB_MAX_OUTPUT_PORT_TYPE
+LCD_data[6] <= data[6].DB_MAX_OUTPUT_PORT_TYPE
+LCD_data[7] <= data[7].DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Thu May 30 03:42:56 2024
+Quartus Prime Version : 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Revision Name : textlcd
+Top-level Entity Name : textlcd
+Family : Cyclone IV E
+Total logic elements : 78
+    Total combinational functions : 77
+    Dedicated logic registers : 37
+Total registers : 37
+Total pins : 26
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

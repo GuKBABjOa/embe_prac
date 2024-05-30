@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/em_hw/lab10/lcd_controller/simulation/qsim
+vhard_block
+Z1 !s110 1717006398
+!i10b 1
+!s100 oL>F<:9Zof`JfAnQ4X=az0
+IQ2joQ^B[^Dde37KRm>zQE1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1717006397
+Z4 8lcd_controller.vo
+Z5 Flcd_controller.vo
+L0 917
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1717006398.000000
+Z8 !s107 lcd_controller.vo|
+Z9 !s90 -work|work|lcd_controller.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vlcd_controller
+R1
+!i10b 1
+!s100 [LKe[l_9U4zTJU@GG:T[[2
+IWQ7UzPIhoGZ:gNR>ml<7Q2
+R2
+R0
+R3
+R4
+R5
+L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+vlcd_controller_vlg_vec_tst
+R1
+!i10b 1
+!s100 IaOZRQ;TiPH_`f>STf<]O2
+IE8VQH1]35NhgZ@IKgBTYQ1
+R2
+R0
+w1717006395
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
